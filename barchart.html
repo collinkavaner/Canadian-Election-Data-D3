@@ -1,0 +1,92 @@
+<!-- Kwinnie Fianza, 8798871 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Stack Layout Chart</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    .bar {
+      fill: steelblue;
+    }
+
+    .bar:hover {
+      fill: orange;
+    }
+
+    .tooltip {
+      position: absolute;
+      z-index: 10;
+      display: none;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+    .sort {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .sort input[type="radio"] {
+    margin-right: 5px;
+  }
+  .sort label {
+    margin-right: 10px;
+  }
+
+  button {
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    padding: 10px;
+  }
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+  </style>
+
+</head>
+
+<body>
+  <main>
+  <div>
+    <a href="index.html" class="back-link">Back to Home</a>
+    <h1>Number of candidates by percentage of valid votes received, by political affiliation</h1>
+  </div>
+
+
+  <div id="chart">
+    <div class="sort">
+      <a href="barchart.html"><button style="cursor: pointer;">Reset</button></a>
+      <label class="container">Sort Total (Ascending):
+        <input type="radio" name="sort" value="asc" onchange="updateChart()">
+      </label>
+    </div>
+  </div>
+
+  <div id="chart"></div>
+
+  <div class="tooltip"></div>
+</main>
+  <script src="./js/barchart.js"></script>
+
+</body>
+
+</html>

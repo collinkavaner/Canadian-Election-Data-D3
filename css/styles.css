@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 42px auto;
+    margin-bottom: 100px;
+    width: min-content;
+}
+
+h2 {
+    margin: 32px 0;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* style select input */
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(151, 151, 151);
+    font-size: 16px;
+}
+
+.graph-filters {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin: 10px auto 20px auto;
+}
+
+.graph-filters>div {
+    min-width: max-content;
+}
+
+.tick>line {
+    stroke: lightgray;
+}
+
+.domain {
+    stroke: lightgray;
+}
+
+.tooltip>div {
+    padding: 5px 0;
+}
+.cell:hover {
+    stroke: black !important;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.graph-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 600px;
+    margin-top: 32px;
+}
+
+.graph-select {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 20px;
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 15px;
+}
+
+.graph-select>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.graph-select>img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.graph-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgb(32, 89, 180);
+    color: white;
+    height: min-content;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.graph-link:hover {
+    background-color: rgb(67, 132, 237);
+}
+
+.back-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid rgb(170, 170, 170);
+    color: rgb(70, 70, 70);
+    height: min-content;
+    margin-right: auto;
+}
+
+.back-link:hover {
+    background-color: rgb(170, 170, 170);
+    color: white;
+}

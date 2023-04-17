@@ -1,0 +1,39 @@
+<!-- Collin Kavaner, 8817364 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://d3js.org/d3.v6.js"></script>
+
+    <title>Line Chart</title>
+</head>
+<body>
+    <main>
+        <a href="index.html" class="back-link">Back to Home</a>
+        <h2>Canadian election data comparing votes over time sorted by province, age group, and gender.</h2>
+        <div id="my_linechart"></div>
+        <p>Select filters below to alter the graph.</p>
+        <div class="graph-filters">
+            <div>
+                <label for="selectProvince">Province:</label>
+                <select id="selectProvince"></select>
+            </div>
+            <div>
+                <label for="selectAge">Age Group:</label>
+                <select id="selectAge"></select>
+            </div>
+            <div>
+                <label for="selectGender">Gender:</label>
+                <select id="selectGender"></select>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="./js/linechart.js"></script>
+
+</html>
