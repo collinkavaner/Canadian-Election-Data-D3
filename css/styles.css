@@ -16,8 +16,24 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 label {
     font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(32, 89, 180);
+    font-weight: 600;
+}
+
+a:hover {
+    color: rgb(67, 132, 237);
 }
 
 /* style select input */
@@ -77,10 +93,14 @@ select {
 .graph-select>div {
     display: flex;
     flex-direction: column;
-    gap: 10px
+    gap: 20px
 }
 
-.graph-select>img {
+.graph-select p {
+    margin: 0;
+}
+
+.graph-select>div>img {
     width: 250px;
     height: auto;
     border-radius: 5px;
@@ -101,6 +121,7 @@ select {
 
 .graph-link:hover {
     background-color: rgb(67, 132, 237);
+    color: white;
 }
 
 .back-link {
